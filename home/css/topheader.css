@@ -1,0 +1,283 @@
+.topHeader{
+    width: 100%;
+    min-width: 1000px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+.topHeader .topHeaderContent{
+    width: 1200px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto;
+    position: relative;
+}
+.topHeaderLeft{
+    xwidth: 260px;
+    height: 26px;
+    position: absolute;
+    overflow: hidden;
+}
+.topHeaderLeft .gretting,.topHeaderLeft a{
+    float: left;
+    margin-right: 8px;
+    line-height: 26px;
+    color: #999;
+}
+.topHeaderLeft a{
+    float: left;
+}
+.topHeaderRight{
+    float: right;
+}
+.topHeaderRight li{
+    float: left;
+    padding:0 5px;
+    position: relative;
+    line-height: 26px;
+    margin-left: 5px;
+}
+.topHeaderRight li a,.topHeaderRight li span{
+    display: inline-block;
+}
+.topHeaderRight .dropTitle a{
+    line-height: 26px;
+}
+.topHeaderRight  .publicIcon{
+    background: url("../../public/img/public-24.png") no-repeat;
+    margin-left: 5px;
+    transition: .2s ease-in;
+    display: inline-block;
+}
+.topHeaderRight .dropTitle .myjiuxian span{
+    width: 9px;
+    height: 8px;
+    background-position: -99px 3px;
+
+}
+.topHeaderRight li .dropBox{
+    position: absolute;
+    top: 26px;
+    left: 0px;
+    width: 72px;
+    background-color: #fff;
+    display: none;
+}
+.topHeaderRight .dropTitle.hdr1:hover{
+    /*zborder-left: 1px #e2e2e2 solid;*/
+    /*zborder-right:1px #e2e2e2 solid;*/
+    background-color: #fff;
+    height: 27px;
+}
+.topHeaderRight .dropTitle:hover .dropBox{
+    display: block;
+}
+.topHeaderRight .dropTitle.hdr1:hover .publicIcon{
+    transform: rotate(180deg);
+}
+.topHeaderRight li .dropBox a{
+    float: left;
+    margin-left: 5px;
+}
+.topHeaderRight .hdn2 a,.topHeaderRight .hdn4 a{
+    text-decoration: none;
+    color: #c00;
+}
+.topHeaderRight .hdn3 .publicIcon{
+    width: 12px;
+    height: 12px;
+    background-position: -18px -1px;
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+}
+.topHeaderRight .hdn3 .num{
+    color: #c00;
+    font-weight: bold;
+}
+.topHeaderRight .hdn6 .shouji{
+    line-height: 16px;
+    height: 16px;
+    background-color: #c00;
+    margin: 5px 5px 0 0;
+    padding: 0 3px ;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 2px;
+
+}
+.topHeaderRight .hdn6 .shouji a{
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+}
+.topHeaderRight .hdn6 .wx{
+    position: absolute;
+    margin-top: 6px;
+    display: none;
+}
+
+.topHeaderRight .hdn6:hover .wx{
+    display: block;
+}
+.topHeaderRight .hdn6:hover a{
+    color: #fff !important;
+}
+
+.topHeaderRight .hdn6 .publicIcon{
+    width: 12px;
+    height: 12px;
+    background-position: -62px 0;
+    position: relative;
+    top: 2px;
+    margin-left: 0;
+}
+.topHeaderRight .hdn7 .pl{
+    width: 12px;
+    height: 12px;
+    background-position: -80px 0;
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+}
+.topHeaderRight .dropTitle.hdn7 .pr{
+    width: 9px;
+    height: 8px;
+    background-position: -99px 3px;
+
+}
+.topHeaderRight .hdn7 .dropBox{
+    width: 200px;
+    display: none;
+    left:5px;
+}
+.topHeaderRight .hdn7 .dropBox .dropBoxItem{
+    width: 200px;
+    padding:0 20px;
+    overflow: hidden;
+}
+.topHeaderRight .hdn7 .dropBoxItem .itemtitle h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.topHeaderRight .hdn7 .itembody a{
+    width: 40px;
+    line-height: 26px;
+    margin: 0 0 5px 0;
+}
+.bg{
+    background-color: #eee;
+}
+.topHeaderRight .hdn7:hover .wangzhan{
+    background-color: #fff;
+}
+.topHeaderRight .dropTitle.hdn8:hover .pr{
+    transform: rotate(180deg);
+}
+.topHeaderRight .dropTitle.hdn8:hover .kehu{
+    background-color: #fff;
+}
+.topHeaderRight .hdn8 .publicIcon.pl{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    background-position: -90px -265px;
+    position: relative;
+    top: 2px;
+}
+.topHeaderRight .hdn8 .dropBox{
+    width: 84px;
+    left: 5px;
+}
+.topHeaderRight .hdn9{
+    color: #999;
+}
+.topHeaderRight .hdn9 span{
+    color: #c00;
+    font-weight: bold;
+}
+.topBanner a{
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: url("../../public/img/bg-a.jpg") no-repeat top center scroll;
+}
+.midHeader{
+    width: 100%;
+    background-color: #fff;
+    min-width: 1200px;
+    overflow: hidden;
+    height: 125px;
+}
+.midHeaderContent{
+    width: 1200px;
+    height: 125px;
+    margin: 30px auto 0;
+    overflow: hidden;
+}
+.midHeaderContent .headerLogo{
+    height: 65px;
+    xmargin-top: 30px;
+    float: left;
+    width: 257px;
+}
+.midHeaderContent .headerLogo div{
+    float: left;
+}
+.midHeaderContent .headerLogo .jiuxianLogo{
+    margin-right: 10px;
+}
+.midHeaderContent .headerLogo .ad_gif {
+    xwidth: 110px;
+    xheight: 65px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.midHeaderContent .headerSearch{
+    float: left;
+    width: 540px;
+    display: inline-block;
+    margin-left: 15px;
+}
+.midHeaderContent .headerSearch .search{
+    border: 5px solid #c00;
+
+}
+.midHeaderContent .headerSearch input,.midHeaderContent .headerSearch button{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.midHeaderContent .headerSearch button{
+    background-color: #c00;
+    border-color: #c00;
+    color: #fff;
+    width: 100px;
+}
+.headerSearch .hotWords{
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+.headerSearch .hotWords a{
+    display: inline-block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding:0 10px;
+    position: relative;
+}
+.headerSearch .hotWords a s{
+    position: absolute;
+    top: 3px;
+    left: -1px;
+}
+.header-ad{
+    width: 363px;
+    height: 64px;
+    float: right;
+    background: url("../../public/img/headerProPic1.png");
+    margin-left: 15px;
+}

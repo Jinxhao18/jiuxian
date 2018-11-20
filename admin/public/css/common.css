@@ -1,0 +1,21 @@
+*{
+    font-family: '微软雅黑',serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding-top:60px ;
+}
+.navbar-brand{
+    color: white !important;
+    font-weight: bold;
+}
+.dropdown-menu .divider{
+    margin: 0;
+}
+.dropdown-menu{
+    padding: 0px;
+}
+.dropdown-menu li a{
+    padding: 10px 20px;
+}

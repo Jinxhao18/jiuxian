@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员查看</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../public/bootstrap/css/bootstrap.css">
+    <script src="../../public/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script src="../../public/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../public/css/common.css">
+</head>
+<body>
+<!--模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">酒仙网后台密码修改</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="p1">
+                            新密码
+                        </label>
+                        <input type="password" id="p1" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="p2">
+                            确认密码
+                        </label>
+                        <input type="password" id="p2" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">酒仙网</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">用户名</a></li>
+                            <div class="divider"></div>
+                            <li><a href="#myModal" data-toggle="modal" >修改密码</a></li>
+                            <div class="divider"></div>
+                            <li><a href="#">退出系统</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="panel-group" id="accordion" role="tablist" >
+                <div class="panel panel-primary">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                会员管理
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" >
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item" style="background-color:#ccc;">增加会员</a>
+                            <a href="change.html" class="list-group-item">删除会员</a>
+                            <a href="change.html" class="list-group-item">修改会员</a>
+                            <a href="change.html" class="list-group-item">查找会员</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                广告管理
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" >
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">增加广告</a>
+                            <a href="#" class="list-group-item">删除广告</a>
+                            <a href="#" class="list-group-item">修改广告</a>
+                            <a href="#" class="list-group-item">查找广告</a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 账单管理-->
+                <div class="panel panel-primary">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                账单管理
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse " role="tabpanel" >
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">增加账单</a>
+                            <a href="#" class="list-group-item">删除账单</a>
+                            <a href="#" class="list-group-item">修改账单</a>
+                            <a href="#" class="list-group-item">查找账单</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 商品管理-->
+                <div class="panel panel-primary">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                商品管理
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" >
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">增加商品</a>
+                            <a href="#" class="list-group-item">删除商品</a>
+                            <a href="#" class="list-group-item">修改商品</a>
+                            <a href="#" class="list-group-item">查找商品</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 评论管理-->
+                <div class="panel panel-primary">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                评论管理
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse " role="tabpanel" >
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">增加评论</a>
+                            <a href="#" class="list-group-item">删除评论</a>
+                            <a href="#" class="list-group-item">修改评论</a>
+                            <a href="#" class="list-group-item">查找评论</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+
+               <form action="" style="width: 60%;margin: 0 auto">
+                   <div class="form-group">
+                       <label for="userName">用户名:</label>
+                       <input type="text" value="" class="form-control">
+                   </div>
+
+                   <div class="form-group">
+                       <label for="userName">密码:</label>
+                       <input type="password" value="" class="form-control" placeholder="***">
+                   </div>
+
+                   <div class="form-group">
+                       <label for="userName">确认密码:</label>
+                       <input type="password" value="" class="form-control" placeholder="***">
+                   </div>
+
+                   <div class="form-group">
+                       <input type="submit" value="添加" class=" btn btn-info">
+                       <input type="reset" value="清除" class=" btn btn-danger">
+                   </div>
+               </form>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
